@@ -10,6 +10,41 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
 nav{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#f7f7f4ee;backdrop-filter:blur(12px);z-index:5}.brand{font-weight:800;letter-spacing:-.03em}.links{display:flex;gap:24px;color:var(--muted);font-size:.9rem}.links a:hover{color:var(--ink)}
 .hero{padding:110px 0 95px;display:grid;grid-template-columns:1.5fr .8fr;gap:70px;align-items:end}
+
+.doc-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 36px;
+  max-width: 680px;
+  margin-top: 24px;
+  transition: .2s;
+}
+
+.doc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px #17201c0b;
+}
+
+.doc-badge {
+  font-size: .75rem;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.doc-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.doc-card p {
+  color: var(--muted);
+  margin: 0 0 24px;
+  font-size: 1rem;
+}
+  
 .headshot {
   width: 200px;
   height: 200px;
@@ -134,19 +169,22 @@ footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-c
     <div class="eyebrow">Endorsements</div>
     <h2>Letter of Recommendation</h2>
     <p class="section-intro">
-      A formal reference highlighting my work ethic, adaptability, operational impact, and cross-functional leadership.
+      Formal reference highlighting operational impact, project execution, and leadership.
     </p>
 
-    <div class="doc-sample">
-      <h3>Executive Endorsement</h3>
-      <p>Scroll below to read the complete recommendation letter.</p>
-
-      <iframe 
-        class="doc-frame" 
-        title="Letter of Recommendation" 
-        src="https://docs.google.com/document/d/e/2PACX-1vR1_8IYWdysnKs8BVTv48xTILaTXTaxC3zffv5gPM0h8esq5cURc8mz0AYyJybkm4YiT0uDAY2fphGq/pub?embedded=true" 
-        loading="lazy">
-      </iframe>
+    <div class="doc-card">
+      <div class="doc-card-body">
+        <div class="doc-badge">Official Reference</div>
+        <h3>Professional Endorsement</h3>
+        <p>Read the complete letter detailing my work ethic, adaptability, and cross-functional leadership in high-execution environments.</p>
+        <a 
+          class="btn primary" 
+          href="https://docs.google.com/document/d/e/2PACX-1vR1_8IYWdysnKs8BVTv48xTILaTXTaxC3zffv5gPM0h8esq5cURc8mz0AYyJybkm4YiT0uDAY2fphGq/pub" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          View Full Letter ↗
+        </a>
+      </div>
     </div>
   </div>
 </section>
