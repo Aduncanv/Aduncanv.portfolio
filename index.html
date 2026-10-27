@@ -26,6 +26,43 @@ section{padding:82px 0;border-top:1px solid var(--line)}h2{font-size:2.4rem;lett
 .cta{background:var(--ink);color:white;padding:70px}.cta p{color:#cbd4cf;max-width:650px}.cta .btn{border-color:white;color:white}.cta .btn.primary{background:white;color:var(--ink)}
 footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between}
 @media(max-width:760px){.links{display:none}.hero,.case{grid-template-columns:1fr;gap:38px}.hero{padding:75px 0}.grid,.skills{grid-template-columns:1fr}h1{font-size:3.5rem}.snapshot{border-left:0;border-top:3px solid var(--accent);padding:20px 0 0}section{padding:62px 0}.cta{padding:50px 28px}}
+
+.sheet-sample {
+  margin-top: 42px;
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.sheet-sample h3 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.sheet-sample p {
+  color: var(--muted);
+  margin: 0 0 22px;
+}
+
+.sheet-frame {
+  display: block;
+  width: 100%;
+  height: 620px;
+  border: 1px solid var(--line);
+  background: white;
+}
+
+@media (max-width: 760px) {
+  .sheet-sample {
+    padding: 18px;
+  }
+
+  .sheet-frame {
+    height: 520px;
+  }
+}
+
+  
 </style>
 </head>
 <body>
@@ -53,7 +90,28 @@ footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-c
 <article class="card"><div class="num">04 / OPERATIONS</div><h3>Operations Dashboard</h3><p>Example reporting framework for tracking employees, outstanding documents, training, administrative tasks, owners, priorities, and deadlines.</p><div class="tags"><span class="tag">Reporting</span><span class="tag">Excel</span><span class="tag">Tracking</span></div></article>
 <article class="card"><div class="num">05 / FIELD OPERATIONS</div><h3>Construction Operations</h3><p>Hands-on exposure to construction sequencing, materials, safety, equipment, quality, and adapting work in changing field conditions.</p><div class="tags"><span class="tag">Construction</span><span class="tag">Operations</span><span class="tag">Problem Solving</span></div></article>
 <article class="card"><div class="num">06 / GOVERNANCE</div><h3>Nonprofit Financial Operations</h3><p>Treasury and board operations involving reconciliation, forecasting, accounts receivable, housing administration, approvals, and reporting.</p><div class="tags"><span class="tag">Finance</span><span class="tag">Governance</span><span class="tag">Administration</span></div></article>
-</div></div></section>
+
+</div>
+
+<!-- Embedded Google Sheets work sample -->
+<div class="sheet-sample">
+  <h3>Spreadsheet Work Sample</h3>
+  <p>
+    Explore this spreadsheet as an example of structured information
+    and operational reporting.
+  </p>
+
+  <iframe
+    class="sheet-frame"
+    title="Google Sheets work sample"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQKnDM3sFZYx6kp2PMRGIOIh3HZNwQp9yC3o7mkHaqlhI1nWks7yWmv193KfoTyuWp-W-e7MgvYA5pr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+    width="100%"
+    height="620"
+    loading="lazy">
+  </iframe>
+</div>
+
+</div></section>
 
 <section id="approach"><div class="wrap">
 <div class="eyebrow">How I work</div><h2>From ambiguity to a usable system.</h2>
