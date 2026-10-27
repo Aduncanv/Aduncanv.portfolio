@@ -53,6 +53,53 @@ nav{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:cen
   border-radius: 50%;
   margin-bottom: 28px;
 }
+
+.competencies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.competency-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 28px;
+  transition: .2s;
+}
+
+.competency-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px #17201c0b;
+}
+
+.competency-card h3 {
+  font-size: 1.25rem;
+  margin: 14px 0 16px;
+}
+
+.competency-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--muted);
+  font-size: .93rem;
+}
+
+.competency-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.competency-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 880px) {
+  .competencies-grid {
+    grid-template-columns: 1fr;
+  }
+} 
 .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.85rem;font-weight:800;color:var(--accent);margin-bottom:18px}h1{font-size:clamp(2rem,5vw,4rem);line-height:.94;letter-spacing:-.065em;margin:0 0 28px;max-width:850px}.lede{font-size:1.0rem;color:#4f5b55;max-width:720px}.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:12px 18px;border:1px solid var(--ink);font-weight:700;font-size:.9rem}.btn.primary{background:var(--ink);color:white}.snapshot{border-left:3px solid var(--accent);padding-left:22px}.snapshot strong{display:block;font-size:1.35rem;margin-bottom:7px}.snapshot p{margin:0;color:var(--muted)}
 section{padding:82px 0;border-top:1px solid var(--line)}h2{font-size:2.4rem;letter-spacing:-.045em;margin:0 0 12px}.section-intro{color:var(--muted);max-width:690px;margin-bottom:38px}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);padding:28px;min-height:250px;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #17201c0b}.num{font-size:.75rem;color:var(--accent);font-weight:800;letter-spacing:.1em}.card h3{font-size:1.35rem;margin:18px 0 8px}.card p{color:var(--muted);margin:0 0 20px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{font-size:.74rem;padding:5px 9px;background:var(--soft);color:var(--accent);font-weight:700}
@@ -200,15 +247,51 @@ footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-c
 </div></div></div></section>
 
 <section id="about"><div class="wrap">
-<div class="eyebrow">Capabilities</div><h2>What I bring to the team.</h2>
-<div class="skills" style="margin-top:38px">
-<div class="skill"><h3>Project Coordination</h3><p>Timelines, stakeholders, implementation support, training, documentation, issue tracking, and follow-through.</p></div>
-<div class="skill"><h3>HR Operations</h3><p>Onboarding, employee records, policies, administrative workflows, scheduling, and process structure.</p></div>
-<div class="skill"><h3>Process Improvement</h3><p>Turning informal or inconsistent practices into repeatable workflows, SOPs, checklists, and ownership models.</p></div>
-<div class="skill"><h3>Operations</h3><p>Cross-functional coordination, administrative infrastructure, reporting, specific instruction, and practical problem solving.</p></div>
-<div class="skill"><h3>Documentation</h3><p>Clear procedures and working documents designed to be understood and used by other people.</p></div>
-<div class="skill"><h3>Business Foundation</h3><p>B.S. in Management with coursework spanning analytics, accounting, finance, HR, law, economics, and strategy.</p></div>
+<div class="eyebrow">Competencies & Skills</div>
+<h2>Core capabilities & technical toolkit.</h2>
+<p class="section-intro">A practical breakdown of domain expertise, systems, financial compliance, and technical tools built across project management, banking, and HR operations.</p>
+
+<div class="competencies-grid">
+  <!-- Operations & Project Management -->
+  <div class="competency-card">
+    <div class="num">01 / EXECUTION</div>
+    <h3>Operations & Project Management</h3>
+    <ul class="competency-list">
+      <li>Process Improvement & SOP Development</li>
+      <li>Workflow Design & Systems Implementation</li>
+      <li>Stakeholder Coordination & Alignment</li>
+      <li>Training, Onboarding & User Adoption</li>
+      <li>Documentation & Knowledge Management</li>
+    </ul>
+  </div>
+
+  <!-- Tools & Systems -->
+  <div class="competency-card">
+    <div class="num">02 / TECHNICAL</div>
+    <h3>Tools & Systems</h3>
+    <ul class="competency-list">
+      <li>Advanced Excel & Financial Modeling</li>
+      <li>Word, PowerPoint, Google Workspace</li>
+      <li>Paycom & HCM Platforms</li>
+      <li>Salesforce CRM</li>
+      <li>Basic SQL & Python</li>
+    </ul>
+  </div>
+
+  <!-- Finance & Compliance -->
+  <div class="competency-card">
+    <div class="num">03 / GOVERNANCE</div>
+    <h3>Finance, Accounting & Compliance</h3>
+    <ul class="competency-list">
+      <li>GAAP (Generally Accepted Accounting Principles)</li>
+      <li>FDIC Compliance & Banking Regulations</li>
+      <li>Financial Analysis & Forecasting</li>
+      <li>Budget Reconciliation & Treasury Ops</li>
+      <li>Client Relations & Customer Service</li>
+    </ul>
+  </div>
 </div>
+</div></section>
 <section id="personal"><div class="wrap">
 <div class="eyebrow">Background & Interests</div>
 <h2>Behind the work.</h2>
