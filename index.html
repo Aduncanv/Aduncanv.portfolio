@@ -5,451 +5,949 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Adrian Duncan-Valdez | Operations & Project Management</title>
 <meta name="description" content="Operations, project management, HR administration, and process improvement portfolio.">
+
 <style>
-:root{--bg:#f7f7f4;--card:#fff;--ink:#17201c;--muted:#68736d;--line:#dfe4df;--accent:#254f3d;--soft:#e5eee9;--max:1120px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
-nav{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#f7f7f4ee;backdrop-filter:blur(12px);z-index:5}.brand{font-weight:800;letter-spacing:-.03em}.links{display:flex;gap:20px;color:var(--muted);font-size:.88rem}.links a:hover{color:var(--ink)}
-.hero{padding:110px 0 95px;display:grid;grid-template-columns:1.5fr .8fr;gap:70px;align-items:end}
-.headshot {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 50%;
-  margin-bottom: 28px;
+:root{
+  --bg:#f7f7f4;
+  --card:#fff;
+  --ink:#17201c;
+  --muted:#68736d;
+  --line:#dfe4df;
+  --accent:#254f3d;
+  --soft:#e5eee9;
+  --max:1120px
 }
-.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.85rem;font-weight:800;color:var(--accent);margin-bottom:18px}
-h1{font-size:clamp(1.8rem,3.8vw,2.8rem);line-height:1.2;letter-spacing:-.03em;margin:0 0 28px;max-width:850px}
-.lede{font-size:1.1rem;color:#4f5b55;max-width:720px;line-height:1.6}
-.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:12px 18px;border:1px solid var(--ink);font-weight:700;font-size:.9rem}.btn.primary{background:var(--ink);color:white}.snapshot{border-left:3px solid var(--accent);padding-left:22px}.snapshot strong{display:block;font-size:1.35rem;margin-bottom:7px}.snapshot p{margin:0;color:var(--muted)}
-section{padding:82px 0;border-top:1px solid var(--line)}h2{font-size:2.4rem;letter-spacing:-.045em;margin:0 0 12px}.section-intro{color:var(--muted);max-width:690px;margin-bottom:38px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);padding:28px;min-height:250px;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #17201c0b}.num{font-size:.75rem;color:var(--accent);font-weight:800;letter-spacing:.1em}.card h3{font-size:1.35rem;margin:18px 0 8px}.card p{color:var(--muted);margin:0 0 20px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{font-size:.74rem;padding:5px 9px;background:var(--soft);color:var(--accent);font-weight:700}
-.case{display:grid;grid-template-columns:.75fr 1.25fr;gap:60px}.case h3{font-size:1.6rem;margin-top:0}.case-block{padding-bottom:26px;margin-bottom:26px;border-bottom:1px solid var(--line)}.case-block:last-child{border:0}.case-block b{display:block;margin-bottom:5px}.case-block p{margin:0;color:var(--muted)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:var(--max);margin:auto;padding:0 28px}
+
+nav{
+  height:76px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  background:#f7f7f4ee;
+  backdrop-filter:blur(12px);
+  z-index:5
+}
+.brand{font-weight:800;letter-spacing:-.03em}
+.links{
+  display:flex;
+  gap:20px;
+  color:var(--muted);
+  font-size:.88rem
+}
+.links a:hover{color:var(--ink)}
+
+.hero{
+  padding:110px 0 95px;
+  display:grid;
+  grid-template-columns:1.5fr .8fr;
+  gap:70px;
+  align-items:end
+}
+
+.headshot{
+  width:200px;
+  height:200px;
+  object-fit:contain;
+  object-position:center;
+  border-radius:50%;
+  margin-bottom:28px
+}
+
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.85rem;
+  font-weight:800;
+  color:var(--accent);
+  margin-bottom:18px
+}
+
+h1{
+  font-size:clamp(1.8rem,3.8vw,2.8rem);
+  line-height:1.2;
+  letter-spacing:-.03em;
+  margin:0 0 28px;
+  max-width:850px
+}
+
+.lede{
+  font-size:1.1rem;
+  color:#4f5b55;
+  max-width:720px;
+  line-height:1.6
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  margin-top:30px;
+  flex-wrap:wrap
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  border:1px solid var(--ink);
+  font-weight:700;
+  font-size:.9rem
+}
+
+.btn.primary{
+  background:var(--ink);
+  color:white
+}
+
+.snapshot{
+  border-left:3px solid var(--accent);
+  padding-left:22px
+}
+.snapshot strong{
+  display:block;
+  font-size:1.35rem;
+  margin-bottom:7px
+}
+.snapshot p{margin:0;color:var(--muted)}
+
+section{
+  padding:82px 0;
+  border-top:1px solid var(--line)
+}
+
+h2{
+  font-size:2.4rem;
+  letter-spacing:-.045em;
+  margin:0 0 12px
+}
+
+.section-intro{
+  color:var(--muted);
+  max-width:690px;
+  margin-bottom:38px
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:28px;
+  min-height:250px;
+  transition:.2s
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px #17201c0b
+}
+
+.num{
+  font-size:.75rem;
+  color:var(--accent);
+  font-weight:800;
+  letter-spacing:.1em
+}
+
+.card h3{
+  font-size:1.35rem;
+  margin:18px 0 8px
+}
+
+.card p{
+  color:var(--muted);
+  margin:0 0 20px
+}
+
+.tags{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap
+}
+
+.tag{
+  font-size:.74rem;
+  padding:5px 9px;
+  background:var(--soft);
+  color:var(--accent);
+  font-weight:700
+}
+
+.case{
+  display:grid;
+  grid-template-columns:.75fr 1.25fr;
+  gap:60px
+}
+
+.case h3{
+  font-size:1.6rem;
+  margin-top:0
+}
+
+.case-block{
+  padding-bottom:26px;
+  margin-bottom:26px;
+  border-bottom:1px solid var(--line)
+}
+
+.case-block:last-child{border:0}
+.case-block b{display:block;margin-bottom:5px}
+.case-block p{margin:0;color:var(--muted)}
 
 /* Competencies Section Styles */
-.competencies-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 32px;
+
+.competencies-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:32px
 }
-.competency-card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  padding: 28px;
-  transition: .2s;
+
+.competency-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:28px;
+  transition:.2s
 }
-.competency-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px #17201c0b;
+
+.competency-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px #17201c0b
 }
-.competency-card h3 {
-  font-size: 1.25rem;
-  margin: 14px 0 16px;
+
+.competency-card h3{
+  font-size:1.25rem;
+  margin:14px 0 16px
 }
-.competency-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: var(--muted);
-  font-size: .93rem;
+
+.competency-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  color:var(--muted);
+  font-size:.93rem
 }
-.competency-list li {
-  padding: 6px 0;
-  border-bottom: 1px solid var(--line);
+
+.competency-list li{
+  padding:6px 0;
+  border-bottom:1px solid var(--line)
 }
-.competency-list li:last-child {
-  border-bottom: none;
-}
+
+.competency-list li:last-child{border-bottom:none}
 
 /* Endorsement Card Styles */
-.doc-card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  padding: 36px;
-  max-width: 680px;
-  margin-top: 24px;
-  transition: .2s;
+
+.doc-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:36px;
+  max-width:680px;
+  margin-top:24px;
+  transition:.2s
 }
-.doc-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px #17201c0b;
+
+.doc-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px #17201c0b
 }
-.doc-badge {
-  display: block;
-  font-size: .75rem;
-  color: var(--accent);
-  font-weight: 800;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+
+.doc-badge{
+  display:block;
+  font-size:.75rem;
+  color:var(--accent);
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:12px
 }
-.doc-card h3 {
-  font-size: 1.5rem;
-  margin: 0 0 10px;
+
+.doc-card h3{
+  font-size:1.5rem;
+  margin:0 0 10px
 }
-.doc-card p {
-  color: var(--muted);
-  margin: 0 0 24px;
-  font-size: 1rem;
+
+.doc-card p{
+  color:var(--muted);
+  margin:0 0 24px;
+  font-size:1rem
 }
+
 /* Work Sample Card Styles */
-.sample-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 32px;
+
+.sample-cards-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  margin-top:32px
 }
 
-.sample-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: var(--card);
-  border: 1px solid var(--line);
-  padding: 28px;
-  min-height: 280px;
+.sample-card{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:28px;
+  min-height:280px
 }
 
-.sample-card .doc-badge {
-  margin-bottom: 12px;
+.sample-card .doc-badge{margin-bottom:12px}
+
+.sample-card h3{
+  font-size:1.35rem;
+  margin:0 0 8px
 }
 
-.sample-card h3 {
-  font-size: 1.35rem;
-  margin: 0 0 8px;
+.sample-card p{
+  color:var(--muted);
+  margin:0 0 24px
 }
 
-.sample-card p {
-  color: var(--muted);
-  margin: 0 0 24px;
-}
+.sample-card .btn{margin-top:auto}
 
-.sample-card .btn {
-  display: inline-block;
-  margin-top: auto;
-}
-
-@media(max-width:960px) {
-  .sample-cards-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* Spreadsheet Grid Styles */
-.sheets-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 32px;
-}
-.sheet-sample {
-  padding: 28px;
-  background: var(--card);
-  border: 1px solid var(--line);
-}
-.sheet-sample h3 {
-  margin: 0 0 8px;
-  font-size: 1.35rem;
-}
-.sheet-sample p {
-  color: var(--muted);
-  margin: 0 0 22px;
-}
-.sheet-frame {
-  display: block;
-  width: 100%;
-  height: 550px;
-  border: 1px solid var(--line);
-  background: white;
+
+.sheets-container{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  margin-top:32px
 }
 
-.cta{background:var(--ink);color:white;padding:70px}.cta p{color:#cbd4cf;max-width:650px}.cta .btn{border-color:white;color:white}.cta .btn.primary{background:white;color:var(--ink)}
-footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between}
+.sheet-sample{
+  padding:28px;
+  background:var(--card);
+  border:1px solid var(--line)
+}
+
+.sheet-sample h3{
+  margin:0 0 8px;
+  font-size:1.35rem
+}
+
+.sheet-sample p{
+  color:var(--muted);
+  margin:0 0 22px
+}
+
+.sheet-frame{
+  display:block;
+  width:100%;
+  height:550px;
+  border:1px solid var(--line);
+  background:white
+}
+
+/* Contact and Footer */
+
+.cta{
+  background:var(--ink);
+  color:white;
+  padding:70px
+}
+
+.cta p{
+  color:#cbd4cf;
+  max-width:650px
+}
+
+.cta .btn{
+  border-color:white;
+  color:white
+}
+
+.cta .btn.primary{
+  background:white;
+  color:var(--ink)
+}
+
+footer{
+  padding:28px 0;
+  color:var(--muted);
+  font-size:.85rem;
+  display:flex;
+  justify-content:space-between
+}
+
+/* Responsive Layout */
 
 @media(max-width:960px){
-  .sheets-container { grid-template-columns: 1fr; }
-  .competencies-grid { grid-template-columns: 1fr; }
+  .sheets-container,
+  .sample-cards-grid{
+    grid-template-columns:1fr
+  }
+
+  .competencies-grid{
+    grid-template-columns:1fr
+  }
 }
+
 @media(max-width:760px){
-  .links{display:none}.hero,.case{grid-template-columns:1fr;gap:38px}.hero{padding:75px 0}.grid{grid-template-columns:1fr}
-  h1{font-size:2.2rem}.snapshot{border-left:0;border-top:3px solid var(--accent);padding:20px 0 0}section{padding:62px 0}.cta{padding:50px 28px}
-  .sheet-sample { padding: 18px; }
-  .sheet-frame { height: 600px; }
+  .links{display:none}
+
+  .hero,
+  .case{
+    grid-template-columns:1fr;
+    gap:38px
+  }
+
+  .hero{padding:75px 0}
+
+  .grid{grid-template-columns:1fr}
+
+  h1{font-size:2.2rem}
+
+  .snapshot{
+    border-left:0;
+    border-top:3px solid var(--accent);
+    padding:20px 0 0
+  }
+
+  section{padding:62px 0}
+
+  .cta{padding:50px 28px}
+
+  .sheet-sample{padding:18px}
+
+  .sheet-frame{height:600px}
+
+  footer{
+    flex-direction:column;
+    gap:8px
+  }
 }
 </style>
 </head>
+
 <body>
-<nav><div class="wrap" style="display:flex;width:100%;justify-content:space-between;align-items:center"><a class="brand" href="#">ADRIAN DUNCAN-VALDEZ</a><div class="links"><a href="#approach">Approach</a><a href="#skills">Capabilities</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#recommendations">Endorsements</a><a href="#samples">Samples</a><a href="#personal">About</a><a href="#contact">Contact</a></div></div></nav>
-<a href="#credentials">Credentials</a>
-  
+
+<!-- NAVIGATION -->
+
+<nav>
+  <div class="wrap" style="display:flex;width:100%;justify-content:space-between;align-items:center">
+    <a class="brand" href="#">ADRIAN DUNCAN-VALDEZ</a>
+
+    <div class="links">
+      <a href="#approach">Approach</a>
+      <a href="#skills">Capabilities</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#work">Work</a>
+      <a href="#recommendations">Endorsements</a>
+      <a href="#samples">Samples</a>
+      <a href="#personal">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+
 <header class="wrap hero">
-<div>
-<img src="headshot.jpg" alt="Adrian Duncan-Valdez" class="headshot">
-<div class="eyebrow">Operations • Project Management • HR Administration</div>
-<h1>Stepping into the unknown, mastering new systems quickly, and driving project execution.</h1>
-<p class="lede">I coordinate people, document processes, improve workflows, and turn ambiguous operational problems into repeatable systems.</p>
-<div class="buttons"><a class="btn primary" href="#work">View my work</a><a class="btn" href="#contact">Get in touch</a></div>
-</div>
-<div class="snapshot"><strong>Operations-minded. Systems-focused.</strong><p>Experience across HCM implementation, banking operations, HR administration, construction, and nonprofit governance.</p></div>
+  <div>
+    <img src="headshot.jpg" alt="Adrian Duncan-Valdez" class="headshot">
+
+    <div class="eyebrow">Operations • Project Management • HR Administration</div>
+
+    <h1>Stepping into the unknown, mastering new systems quickly, and driving project execution.</h1>
+
+    <p class="lede">
+      I coordinate people, document processes, improve workflows, and turn ambiguous operational problems into repeatable systems.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#work">View my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="snapshot">
+    <strong>Operations-minded. Systems-focused.</strong>
+    <p>Experience across HCM implementation, banking operations, HR administration, construction, and nonprofit governance.</p>
+  </div>
 </header>
 
 <main>
 
 <!-- 1. HOW I WORK -->
-<section id="approach"><div class="wrap">
-<div class="eyebrow">How I work</div><h2>From ambiguity to a usable system.</h2>
-<div class="case" style="margin-top:42px"><div><h3>My operating approach</h3><p style="color:var(--muted)">The common thread across my experience is not a particular industry. It is the ability to enter an environment, understand how work actually happens, identify what is missing, and create enough structure for people to execute reliably.</p></div>
-<div>
-<div class="case-block"><b>01 — Understand the problem</b><p>Map the current process, identify stakeholders, constraints, dependencies, and friction points.</p></div>
-<div class="case-block"><b>02 — Build the structure</b><p>Create workflows, checklists, documentation, trackers, ownership, and standards that people can actually use.</p></div>
-<div class="case-block"><b>03 — Coordinate execution</b><p>Update shareholders, resolve issues, support team members, monitor deadlines, and hold both senior and junior contributors accountable.</p></div>
-<div class="case-block"><b>04 — Improve the process</b><p>Use feedback, research, advice, recurring problem analysis, and root cause analysis to make process repetition efficient.</p></div>
-</div></div></div></section>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="eyebrow">How I work</div>
+    <h2>From ambiguity to a usable system.</h2>
+
+    <div class="case" style="margin-top:42px">
+      <div>
+        <h3>My operating approach</h3>
+        <p style="color:var(--muted)">
+          The common thread across my experience is not a particular industry. It is the ability to enter an environment, understand how work actually happens, identify what is missing, and create enough structure for people to execute reliably.
+        </p>
+      </div>
+
+      <div>
+        <div class="case-block">
+          <b>01 — Understand the problem</b>
+          <p>Map the current process, identify stakeholders, constraints, dependencies, and friction points.</p>
+        </div>
+
+        <div class="case-block">
+          <b>02 — Build the structure</b>
+          <p>Create workflows, checklists, documentation, trackers, ownership, and standards that people can actually use.</p>
+        </div>
+
+        <div class="case-block">
+          <b>03 — Coordinate execution</b>
+          <p>Update stakeholders, resolve issues, support team members, monitor deadlines, and hold both senior and junior contributors accountable.</p>
+        </div>
+
+        <div class="case-block">
+          <b>04 — Improve the process</b>
+          <p>Use feedback, research, advice, recurring problem analysis, and root cause analysis to make process repetition efficient.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- 2. COMPETENCIES AND SKILLS -->
-<section id="skills"><div class="wrap">
-<div class="eyebrow">Competencies & Skills</div>
-<h2>Core capabilities & technical toolkit.</h2>
-<p class="section-intro">A practical breakdown of domain expertise, systems, financial compliance, and technical tools built across project management, banking, and HR operations.</p>
 
-<div class="competencies-grid">
-  <div class="competency-card">
-    <div class="num">01 / EXECUTION</div>
-    <h3>Operations & Project Management</h3>
-    <ul class="competency-list">
-      <li>Process Improvement & SOP Development</li>
-      <li>Workflow Design & Systems Implementation</li>
-      <li>Stakeholder Coordination & Alignment</li>
-      <li>Training, Onboarding & User Adoption</li>
-      <li>Documentation & Knowledge Management</li>
-    </ul>
-  </div>
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">Competencies & Skills</div>
+    <h2>Core capabilities & technical toolkit.</h2>
 
-  <div class="competency-card">
-    <div class="num">02 / TECHNICAL</div>
-    <h3>Tools & Systems</h3>
-    <ul class="competency-list">
-      <li>Advanced Excel & Financial Modeling</li>
-      <li>Word, PowerPoint, Google Workspace</li>
-      <li>Paycom & HCM Platforms</li>
-      <li>Salesforce CRM</li>
-      <li>Basic SQL & Python</li>
-    </ul>
-  </div>
+    <p class="section-intro">
+      A practical breakdown of domain expertise, systems, financial compliance, and technical tools built across project management, banking, and HR operations.
+    </p>
 
-  <div class="competency-card">
-    <div class="num">03 / GOVERNANCE</div>
-    <h3>Finance, Accounting & Compliance</h3>
-    <ul class="competency-list">
-      <li>GAAP (Generally Accepted Accounting Principles)</li>
-      <li>FDIC Compliance & Banking Regulations</li>
-      <li>Financial Analysis & Forecasting</li>
-      <li>Budget Reconciliation & Treasury Ops</li>
-      <li>Client Relations & Customer Service</li>
-    </ul>
+    <div class="competencies-grid">
+
+      <div class="competency-card">
+        <div class="num">01 / EXECUTION</div>
+        <h3>Operations & Project Management</h3>
+
+        <ul class="competency-list">
+          <li>Process Improvement & SOP Development</li>
+          <li>Workflow Design & Systems Implementation</li>
+          <li>Stakeholder Coordination & Alignment</li>
+          <li>Training, Onboarding & User Adoption</li>
+          <li>Documentation & Knowledge Management</li>
+        </ul>
+      </div>
+
+      <div class="competency-card">
+        <div class="num">02 / TECHNICAL</div>
+        <h3>Tools & Systems</h3>
+
+        <ul class="competency-list">
+          <li>Advanced Excel & Financial Modeling</li>
+          <li>Word, PowerPoint, Google Workspace</li>
+          <li>Paycom & HCM Platforms</li>
+          <li>Salesforce CRM</li>
+          <li>Basic SQL & Python</li>
+        </ul>
+      </div>
+
+      <div class="competency-card">
+        <div class="num">03 / GOVERNANCE</div>
+        <h3>Finance, Accounting & Compliance</h3>
+
+        <ul class="competency-list">
+          <li>GAAP (Generally Accepted Accounting Principles)</li>
+          <li>FDIC Compliance & Banking Regulations</li>
+          <li>Financial Analysis & Forecasting</li>
+          <li>Budget Reconciliation & Treasury Ops</li>
+          <li>Client Relations & Customer Service</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
-</div>
-</div></section>
+</section>
 
 <!-- 3. EXPERIENCE -->
-<section id="experience"><div class="wrap">
-<div class="eyebrow">Experience</div><h2>A broad operational foundation.</h2>
-<div class="grid" style="margin-top:35px">
-<div class="card" style="min-height:0"><h3>Paycom</h3><p><strong>Implementation Project Manager</strong><br>HCM implementation, employee training, cross-functional coordination, timelines, documentation, and adoption.</p></div>
-<div class="card" style="min-height:0"><h3>U.S. Bank</h3><p><strong>Client Relationship Consultant II</strong><br>Client operations, regulatory compliance (Reg B,C, E, CC, DD, P, V, Z, M), all business account types, legal-document interpretation, training, UTMA, consumer and business lending, notary, cash shipment, and branch performance improvement.</p></div>
-<div class="card" style="min-height:0"><h3>Twin Peaks Engineering & Construction</h3><p><strong>Field & Administrative Operations</strong><br>Construction exposure followed by HR/admin infrastructure creation, employee records, onboarding, policies, hiring, scheduling, and internal operations.</p></div>
-<div class="card" style="min-height:0"><h3>Nonprofit Board Operations</h3><p><strong>Treasurer</strong><br>Financial reconciliation, forecasting, accounts receivable, housing administration, reporting, financial analysis, and governance support.</p></div>
-</div></div></section>
 
-  <!-- 4. CERTIFICATIONS & ACADEMIC RECOGNITION -->
-<section id="credentials"><div class="wrap">
-<div class="eyebrow">Professional Development & Recognition</div>
-<h2>Certifications & Academic Recognition.</h2>
-<p class="section-intro">
-Technical training, continued learning, and academic affiliations that complement my professional experience.
-</p>
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow">Experience</div>
+    <h2>A broad operational foundation.</h2>
 
-<div class="grid">
+    <div class="grid" style="margin-top:35px">
 
-  <article class="card">
-    <div class="num">01 / TECHNICAL TRAINING</div>
-    <h3>Python Programming</h3>
-    <p>Certificate of completion in Python programming and technical development.</p>
-    <div class="tags">
-      <span class="tag">Python</span>
-      <span class="tag">Programming</span>
+      <div class="card" style="min-height:0">
+        <h3>Paycom</h3>
+        <p>
+          <strong>Implementation Project Manager</strong><br>
+          HCM implementation, employee training, cross-functional coordination, timelines, documentation, and adoption.
+        </p>
+      </div>
+
+      <div class="card" style="min-height:0">
+        <h3>U.S. Bank</h3>
+        <p>
+          <strong>Client Relationship Consultant II</strong><br>
+          Client operations, regulatory compliance (Reg B, C, E, CC, DD, P, V, Z, M), all business account types, legal-document interpretation, training, UTMA, consumer and business lending, notary, cash shipment, and branch performance improvement.
+        </p>
+      </div>
+
+      <div class="card" style="min-height:0">
+        <h3>Twin Peaks Engineering & Construction</h3>
+        <p>
+          <strong>Field & Administrative Operations</strong><br>
+          Construction exposure followed by HR/admin infrastructure creation, employee records, onboarding, policies, hiring, scheduling, and internal operations.
+        </p>
+      </div>
+
+      <div class="card" style="min-height:0">
+        <h3>Nonprofit Board Operations</h3>
+        <p>
+          <strong>Treasurer</strong><br>
+          Financial reconciliation, forecasting, accounts receivable, housing administration, reporting, financial analysis, and governance support.
+        </p>
+      </div>
+
     </div>
-    <a class="btn primary"
-       href="certificates/certificate_of_completion_python.pdf"
-       target="_blank"
-       rel="noopener noreferrer">
-       View Certificate ↗
-    </a>
-  </article>
+  </div>
+</section>
 
-  <article class="card">
-    <div class="num">02 / TECHNICAL TRAINING</div>
-    <h3>SQL</h3>
-    <p>Certificate of completion in SQL and relational database querying.</p>
-    <div class="tags">
-      <span class="tag">SQL</span>
-      <span class="tag">Data</span>
-      <span class="tag">Databases</span>
+<!-- 4. CERTIFICATIONS & ACADEMIC RECOGNITION -->
+
+<section id="credentials">
+  <div class="wrap">
+    <div class="eyebrow">Professional Development & Recognition</div>
+    <h2>Certifications & Academic Recognition.</h2>
+
+    <p class="section-intro">
+      Technical training, continued learning, and academic affiliations that complement my professional experience.
+    </p>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="num">01 / TECHNICAL TRAINING</div>
+        <h3>Python Programming</h3>
+        <p>Certificate of completion in Python programming and technical development.</p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Programming</span>
+        </div>
+
+        <a class="btn primary"
+           href="certificates/certificate_of_completion_python.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Certificate ↗
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="num">02 / TECHNICAL TRAINING</div>
+        <h3>SQL</h3>
+        <p>Certificate of completion in SQL and relational database querying.</p>
+
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Data</span>
+          <span class="tag">Databases</span>
+        </div>
+
+        <a class="btn primary"
+           href="certificates/certificate_of_completion_sql.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Certificate ↗
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="num">03 / ACADEMIC RECOGNITION</div>
+        <h3>Phi Sigma Tau</h3>
+        <p>Membership in the international honor society for philosophy.</p>
+
+        <div class="tags">
+          <span class="tag">Academic Honor Society</span>
+          <span class="tag">Philosophy</span>
+        </div>
+
+        <a class="btn primary"
+           href="certificates/%CE%A6%CE%A3%CE%A4%20Honor%20Society.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Membership ↗
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="num">04 / ACADEMIC RECOGNITION</div>
+        <h3>Order of Omega</h3>
+        <p>Membership recognizing academic achievement and leadership within the Greek-letter community.</p>
+
+        <div class="tags">
+          <span class="tag">Leadership</span>
+          <span class="tag">Academic Recognition</span>
+        </div>
+
+        <a class="btn primary"
+           href="certificates/%CE%A9%20Membership.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Membership ↗
+        </a>
+      </article>
+
     </div>
-    <a class="btn primary"
-       href="certificates/certificate_of_completion_sql.pdf"
-       target="_blank"
-       rel="noopener noreferrer">
-       View Certificate ↗
-    </a>
-  </article>
+  </div>
+</section>
 
-  <article class="card">
-    <div class="num">03 / ACADEMIC RECOGNITION</div>
-    <h3>Phi Sigma Tau</h3>
-    <p>Membership in the international honor society for philosophy.</p>
-    <div class="tags">
-      <span class="tag">Academic Honor Society</span>
-      <span class="tag">Philosophy</span>
+<!-- 5. SELECTED WORK -->
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">Selected Work</div>
+    <h2>Built with precision, improved with purpose.</h2>
+
+    <p class="section-intro">
+      A practical demonstration of fast learning, continuous process improvement, and a commitment to operational excellence across distinct domains.
+    </p>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="num">01 / HR OPERATIONS</div>
+        <h3>Employee Onboarding System</h3>
+        <p>Designed a repeatable onboarding structure for a growing construction environment, including records, workflows, documentation, and administrative responsibilities.</p>
+        <div class="tags">
+          <span class="tag">HR</span>
+          <span class="tag">Process Design</span>
+          <span class="tag">Documentation</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">02 / PROJECT MANAGEMENT</div>
+        <h3>HCM Implementation</h3>
+        <p>Led HCM implementation and adoption, redesigning legacy workflows around industry-standard practices, advising senior stakeholders, developing custom reports, and delivering tailored training on system workflows and regulatory requirements. Achieved 100% system adoption before account transitions.</p>
+        <div class="tags">
+          <span class="tag">Implementation</span>
+          <span class="tag">Waterfall and Agile</span>
+          <span class="tag">Training</span>
+          <span class="tag">Coordination</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">03 / ADMINISTRATION</div>
+        <h3>HR Records Infrastructure</h3>
+        <p>Built practical structures for employee records, onboarding information, policies, and recurring administrative workflows.</p>
+        <div class="tags">
+          <span class="tag">HR Admin</span>
+          <span class="tag">Records</span>
+          <span class="tag">SOPs</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">04 / OPERATIONS</div>
+        <h3>Operations Dashboard</h3>
+        <p>Example reporting framework for tracking employees, outstanding documents, training, administrative tasks, owners, priorities, and deadlines.</p>
+        <div class="tags">
+          <span class="tag">Reporting</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Tracking</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">05 / FIELD OPERATIONS</div>
+        <h3>Construction Operations</h3>
+        <p>Hands-on exposure to construction sequencing, materials, safety, equipment, quality, and adapting work in changing field conditions.</p>
+        <div class="tags">
+          <span class="tag">Construction</span>
+          <span class="tag">Operations</span>
+          <span class="tag">Problem Solving</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">06 / GOVERNANCE</div>
+        <h3>Nonprofit Financial Operations</h3>
+        <p>Treasury and board operations involving reconciliation, forecasting, accounts receivable, housing administration, approvals, and reporting.</p>
+        <div class="tags">
+          <span class="tag">Finance</span>
+          <span class="tag">Governance</span>
+          <span class="tag">Administration</span>
+        </div>
+      </article>
+
     </div>
-    <a class="btn primary"
-       href="certificates/%CE%A6%CE%A3%CE%A4%20Honor%20Society.pdf"
-       target="_blank"
-       rel="noopener noreferrer">
-       View Membership ↗
-    </a>
-  </article>
+  </div>
+</section>
 
-  <article class="card">
-    <div class="num">04 / ACADEMIC RECOGNITION</div>
-    <h3>Order of Omega</h3>
-    <p>Membership recognizing academic achievement and leadership within the Greek-letter community.</p>
-    <div class="tags">
-      <span class="tag">Leadership</span>
-      <span class="tag">Academic Recognition</span>
+<!-- 6. ENDORSEMENTS -->
+
+<section id="recommendations">
+  <div class="wrap">
+    <div class="eyebrow">Endorsements</div>
+    <h2>Letter of Recommendation</h2>
+
+    <p class="section-intro">
+      Formal reference highlighting operational impact, project execution, and leadership.
+    </p>
+
+    <div class="doc-card">
+      <div class="doc-card-body">
+        <div class="doc-badge">Official Reference</div>
+        <h3>Professional Endorsement</h3>
+        <p>Read the complete letter detailing my work ethic, adaptability, and cross-functional leadership in high-execution environments.</p>
+
+        <a class="btn primary"
+           href="https://docs.google.com/document/d/e/2PACX-1vR1_8IYWdysnKs8BVTv48xTILaTXTaxC3zffv5gPM0h8esq5cURc8mz0AYyJybkm4YiT0uDAY2fphGq/pub"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Full Letter ↗
+        </a>
+      </div>
     </div>
-    <a class="btn primary"
-       href="certificates/%CE%A9%20Membership.pdf"
-       target="_blank"
-       rel="noopener noreferrer">
-       View Membership ↗
-    </a>
-  </article>
+  </div>
+</section>
 
-</div>
-</div></section>
-  
-<!-- 4. SELECTED WORK -->
-<section id="work"><div class="wrap">
-<div class="eyebrow">Selected Work</div>
-<h2>Built with precision, improved with purpose.</h2>
-<p class="section-intro">A practical demonstration of fast learning, continuous process improvement, and a commitment to operational excellence across distinct domains.</p>
-<div class="grid">
-<article class="card"><div class="num">01 / HR OPERATIONS</div><h3>Employee Onboarding System</h3><p>Designed a repeatable onboarding structure for a growing construction environment, including records, workflows, documentation, and administrative responsibilities.</p><div class="tags"><span class="tag">HR</span><span class="tag">Process Design</span><span class="tag">Documentation</span></div></article>
-<article class="card"><div class="num">02 / PROJECT MANAGEMENT</div><h3>HCM Implementation</h3><p>Led HCM implementation and adoption, redesigning legacy workflows around industry-standard practices, advising senior stakeholders, developing custom reports, and delivering tailored training on system workflows and regulatory requirements. Achieved 100% system adoption before account transitions.</p><div class="tags"><span class="tag">Implementation</span><span class="tag">Waterfall and Agile</span><span class="tag">Training</span><span class="tag">Coordination</span></div></article>
-<article class="card"><div class="num">03 / ADMINISTRATION</div><h3>HR Records Infrastructure</h3><p>Built practical structures for employee records, onboarding information, policies, and recurring administrative workflows.</p><div class="tags"><span class="tag">HR Admin</span><span class="tag">Records</span><span class="tag">SOPs</span></div></article>
-<article class="card"><div class="num">04 / OPERATIONS</div><h3>Operations Dashboard</h3><p>Example reporting framework for tracking employees, outstanding documents, training, administrative tasks, owners, priorities, and deadlines.</p><div class="tags"><span class="tag">Reporting</span><span class="tag">Excel</span><span class="tag">Tracking</span></div></article>
-<article class="card"><div class="num">05 / FIELD OPERATIONS</div><h3>Construction Operations</h3><p>Hands-on exposure to construction sequencing, materials, safety, equipment, quality, and adapting work in changing field conditions.</p><div class="tags"><span class="tag">Construction</span><span class="tag">Operations</span><span class="tag">Problem Solving</span></div></article>
-<article class="card"><div class="num">06 / GOVERNANCE</div><h3>Nonprofit Financial Operations</h3><p>Treasury and board operations involving reconciliation, forecasting, accounts receivable, housing administration, approvals, and reporting.</p><div class="tags"><span class="tag">Finance</span><span class="tag">Governance</span><span class="tag">Administration</span></div></article>
-</div>
-</div></section>
+<!-- 7. WORK SAMPLES -->
 
-<!-- 5. ENDORSEMENTS -->
-<section id="recommendations"><div class="wrap">
-  <div class="eyebrow">Endorsements</div>
-  <h2>Letter of Recommendation</h2>
-  <p class="section-intro">
-    Formal reference highlighting operational impact, project execution, and leadership.
-  </p>
+<section id="samples">
+  <div class="wrap">
+    <div class="eyebrow">Work Samples</div>
+    <h2>Structured reporting & operational tools.</h2>
 
-  <div class="doc-card">
-    <div class="doc-card-body">
-      <div class="doc-badge">Official Reference</div>
-      <h3>Professional Endorsement</h3>
-      <p>Read the complete letter detailing my work ethic, adaptability, and cross-functional leadership in high-execution environments.</p>
-      <a 
-        class="btn primary" 
-        href="https://docs.google.com/document/d/e/2PACX-1vR1_8IYWdysnKs8BVTv48xTILaTXTaxC3zffv5gPM0h8esq5cURc8mz0AYyJybkm4YiT0uDAY2fphGq/pub" 
-        target="_blank" 
-        rel="noopener noreferrer">
-        View Full Letter ↗
+    <p class="section-intro">
+      Interactive spreadsheet models built for financial forecasting, data tracking, and administrative organization.
+    </p>
+
+    <div class="sample-cards-grid">
+
+      <!-- Sample 1 -->
+
+      <div class="sample-card">
+        <div class="doc-badge">Operational Tool</div>
+        <h3>Operations & Data Tracker</h3>
+        <p>A structured reporting framework built to organize complex tracking, task ownership, and operational deadlines.</p>
+
+        <a class="btn primary"
+           href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQKnDM3sFZYx6kp2PMRGIOIh3HZNwQp9yC3o7mkHaqlhI1nWks7yWmv193KfoTyuWp-W-e7MgvYA5pr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Spreadsheet ↗
+        </a>
+      </div>
+
+      <!-- Sample 2 -->
+
+      <div class="sample-card">
+        <div class="doc-badge">Financial Model</div>
+        <h3>Budget & Forecast Report</h3>
+        <p>A financial modeling tool designed for budget reconciliation, forecasting, and board-level reporting.</p>
+
+        <a class="btn primary"
+           href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLAn5-CibX5-6mG4iujLbag2yvA05JUf5RCnRr8Rl0OmlwlkABB9GejarhLqVVjA/pubhtml?widget=true&amp;headers=false"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Spreadsheet ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 8. BACKGROUND AND INTERESTS -->
+
+<section id="personal">
+  <div class="wrap">
+    <div class="eyebrow">Background & Interests</div>
+    <h2>Behind the work.</h2>
+
+    <p class="section-intro">
+      Beyond systems, spreadsheets, and project timelines—a look at my background, education, and what keeps me busy outside of work.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="num">01 / EDUCATION & ROOTS</div>
+        <h3>Academic Foundation</h3>
+        <p>Born and raised in Portland, Oregon, with an education centered on business management, leadership, and analytical problem-solving.</p>
+
+        <div class="tags">
+          <span class="tag">Central Catholic High School</span>
+          <span class="tag">Linfield University</span>
+          <span class="tag">B.S. Management</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="num">02 / OUTSIDE THE OFFICE</div>
+        <h3>Hands-On Hobbies</h3>
+        <p>I enjoy projects that require patience, precision, and building things from scratch—whether working with raw materials or maintaining complex ecosystems.</p>
+
+        <div class="tags">
+          <span class="tag">Woodworking & Carpentry</span>
+          <span class="tag">Aquarium Keeping</span>
+          <span class="tag">Strength Training</span>
+          <span class="tag">DIY & Restorations</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="cta">
+  <div class="wrap" style="padding:0">
+    <div class="eyebrow" style="color:#a8c9ba">Let's connect</div>
+
+    <h2>Looking for someone who goes above their role to make lasting contributions?</h2>
+
+    <p>I'm pursuing opportunities in operations, project coordination/project management, HR administration, and related business support roles.</p>
+
+    <div class="buttons">
+      <a class="btn primary" href="mailto:adrian.gduncan@gmail.com">
+        adrian.gduncan@gmail.com
+      </a>
+
+      <a class="btn"
+         href="https://www.linkedin.com/in/aduncanv/"
+         target="_blank"
+         rel="noopener noreferrer">
+        LinkedIn
       </a>
     </div>
   </div>
-</div></section>
+</section>
 
-<!-- 6. WORK SAMPLES -->
-<!-- 6. WORK SAMPLES -->
-<section id="samples"><div class="wrap">
-<div class="eyebrow">Work Samples</div>
-<h2>Structured reporting & operational tools.</h2>
-<p class="section-intro">Interactive spreadsheet models built for financial forecasting, data tracking, and administrative organization.</p>
-
-<div class="sample-cards-grid">
-  <!-- Sample 1 -->
-  <div class="sample-card">
-    <div class="doc-badge">Operational Tool</div>
-    <h3>Operations & Data Tracker</h3>
-    <p>A structured reporting framework built to organize complex tracking, task ownership, and operational deadlines.</p>
-    <a 
-      class="btn primary" 
-      href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQKnDM3sFZYx6kp2PMRGIOIh3HZNwQp9yC3o7mkHaqlhI1nWks7yWmv193KfoTyuWp-W-e7MgvYA5pr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" 
-      target="_blank" 
-      rel="noopener noreferrer">
-      View Spreadsheet ↗
-    </a>
-  </div>
-
-  <!-- Sample 2 -->
-  <div class="sample-card">
-    <div class="doc-badge">Financial Model</div>
-    <h3>Budget & Forecast Report</h3>
-    <p>A financial modeling tool designed for budget reconciliation, forecasting, and board-level reporting.</p>
-    <a 
-      class="btn primary" 
-      href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLAn5-CibX5-6mG4iujLbag2yvA05JUf5RCnRr8Rl0OmlwlkABB9GejarhLqVVjA/pubhtml?widget=true&amp;headers=false" 
-      target="_blank" 
-      rel="noopener noreferrer">
-      View Spreadsheet ↗
-    </a>
-  </div>
-</div>
-</div></section>
-<!-- 7. BACKGROUND AND INTERESTS -->
-<section id="personal"><div class="wrap">
-<div class="eyebrow">Background & Interests</div>
-<h2>Behind the work.</h2>
-<p class="section-intro">Beyond systems, spreadsheets, and project timelines—a look at my background, education, and what keeps me busy outside of work.</p>
-
-<div class="grid">
-  <div class="card">
-    <div class="num">01 / EDUCATION & ROOTS</div>
-    <h3>Academic Foundation</h3>
-    <p>Born and raised in Portland, Oregon, with an education centered on business management, leadership, and analytical problem-solving.</p>
-    <div class="tags">
-      <span class="tag">Central Catholic High School</span>
-      <span class="tag">Linfield University</span>
-      <span class="tag">B.S. Management</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="num">02 / OUTSIDE THE OFFICE</div>
-    <h3>Hands-On Hobbies</h3>
-    <p>I enjoy projects that require patience, precision, and building things from scratch—whether working with raw materials or maintaining complex ecosystems.</p>
-    <div class="tags">
-      <span class="tag">Woodworking & Carpentry</span>
-      <span class="tag">Aquarium Keeping</span>
-      <span class="tag">Strength Training</span>
-      <span class="tag">DIY & Restorations</span>
-    </div>
-  </div>
-</div>
-</div></section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="cta"><div class="wrap" style="padding:0"><div class="eyebrow" style="color:#a8c9ba">Let's connect</div><h2>Looking for someone who goes above their role to make lasting contributions?</h2><p>I'm pursuing opportunities in operations, project coordination/project management, HR administration, and related business support roles.</p><div class="buttons"><a class="btn primary" href="mailto:adrian.gduncan@gmail.com">adrian.gduncan@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/aduncanv/" target="_blank" rel="noopener noreferrer">Linkedin</a></div></div></section>
 </main>
-<footer class="wrap"><span>© 2026 Adrian Duncan-Valdez</span><span>Operations • Projects • People • Systems</span></footer>
+
+<footer class="wrap">
+  <span>© 2026 Adrian Duncan-Valdez</span>
+  <span>Operations • Projects • People • Systems</span>
+</footer>
+
 </body>
 </html>
