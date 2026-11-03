@@ -93,7 +93,48 @@ section{padding:82px 0;border-top:1px solid var(--line)}h2{font-size:2.4rem;lett
   margin: 0 0 24px;
   font-size: 1rem;
 }
+/* Work Sample Card Styles */
+.sample-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
 
+.sample-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 28px;
+  min-height: 280px;
+}
+
+.sample-card .doc-badge {
+  margin-bottom: 12px;
+}
+
+.sample-card h3 {
+  font-size: 1.35rem;
+  margin: 0 0 8px;
+}
+
+.sample-card p {
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+.sample-card .btn {
+  display: inline-block;
+  margin-top: auto;
+}
+
+@media(max-width:960px) {
+  .sample-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* Spreadsheet Grid Styles */
 .sheets-container {
   display: grid;
